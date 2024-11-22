@@ -4,6 +4,7 @@ std_msgs/Header header
 string source
 
 # steering control
+# -0.5 to 0.5
 float64 steering_angle
 
 # control mode
