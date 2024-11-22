@@ -5,7 +5,7 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
-cmake_policy(SET CMP0148 OLD)
+# cmake_policy(SET CMP0148 OLD)
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
@@ -18,6 +18,7 @@ find_package(rosidl_default_generators REQUIRED)
 
 set(msg_files
   "msg/Control.msg"
+  "msg/ServoState.msg"
   DEPENDENCIES std_msgs
 )
 
