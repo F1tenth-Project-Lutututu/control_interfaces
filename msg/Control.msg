@@ -16,3 +16,6 @@ int32 control_mode
 float64 set_speed     # (m per s)
 float64 set_current   # (A)
 float64 set_brake     # (A)
+
+# feed-forward references for state prediction
+float64 omega_wheels_ref_dot  # (rad/s²)
